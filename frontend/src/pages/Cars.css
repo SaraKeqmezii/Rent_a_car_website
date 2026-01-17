@@ -1,0 +1,140 @@
+.cars-page {
+  padding-bottom: 60px;
+}
+
+.cars-hero {
+  background: linear-gradient(135deg, var(--secondary-color), #457b9d);
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.cars-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.cars-hero p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+.cars-content {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+/* Filters Sidebar */
+.filters-sidebar {
+  background: white;
+  padding: 25px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  height: fit-content;
+  position: sticky;
+  top: 100px;
+}
+
+.filters-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid var(--light-color);
+}
+
+.filters-header h3 {
+  color: var(--secondary-color);
+}
+
+.clear-filters {
+  background: none;
+  border: none;
+  color: var(--primary-color);
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.filter-group {
+  margin-bottom: 20px;
+}
+
+.filter-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: var(--secondary-color);
+}
+
+.filter-group select,
+.filter-group input {
+  width: 100%;
+  padding: 10px 15px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  transition: var(--transition);
+}
+
+.filter-group select:focus,
+.filter-group input:focus {
+  border-color: var(--primary-color);
+  outline: none;
+}
+
+/* Cars Main */
+.cars-main {
+  min-height: 500px;
+}
+
+.cars-header {
+  margin-bottom: 20px;
+}
+
+.cars-header p {
+  color: var(--text-light);
+  font-weight: 500;
+}
+
+.cars-grid {
+  gap: 25px;
+}
+
+.no-cars {
+  text-align: center;
+  padding: 60px 20px;
+  background: white;
+  border-radius: var(--border-radius);
+}
+
+.no-cars p {
+  color: var(--text-light);
+  margin-bottom: 20px;
+}
+
+@media (max-width: 992px) {
+  .cars-content {
+    grid-template-columns: 1fr;
+  }
+
+  .filters-sidebar {
+    position: static;
+  }
+
+  .cars-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .cars-hero h1 {
+    font-size: 2rem;
+  }
+
+  .cars-grid {
+    grid-template-columns: 1fr;
+  }
+}

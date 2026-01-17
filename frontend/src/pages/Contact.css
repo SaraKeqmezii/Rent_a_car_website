@@ -1,0 +1,135 @@
+.contact-page {
+  padding: 40px 0 60px;
+}
+
+.contact-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  margin-bottom: 60px;
+}
+
+.contact-info h2 {
+  font-size: 1.8rem;
+  color: var(--secondary-color);
+  margin-bottom: 10px;
+}
+
+.contact-info > p {
+  color: var(--text-light);
+  margin-bottom: 30px;
+}
+
+.info-cards {
+  display: grid;
+  gap: 20px;
+}
+
+.info-card {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  background: white;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+}
+
+.info-icon {
+  font-size: 2rem;
+  flex-shrink: 0;
+}
+
+.info-card h4 {
+  color: var(--secondary-color);
+  margin-bottom: 5px;
+}
+
+.info-card p {
+  color: var(--text-light);
+  margin: 2px 0;
+  font-size: 0.95rem;
+}
+
+.locations {
+  margin-top: 30px;
+  padding: 25px;
+  background: var(--light-color);
+  border-radius: var(--border-radius);
+}
+
+.locations h3 {
+  color: var(--secondary-color);
+  margin-bottom: 15px;
+}
+
+.locations ul {
+  list-style: none;
+}
+
+.locations li {
+  padding: 8px 0;
+  color: var(--text-color);
+}
+
+.contact-form-wrapper {
+  background: white;
+  padding: 40px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+}
+
+.contact-form-wrapper h2 {
+  font-size: 1.8rem;
+  color: var(--secondary-color);
+  margin-bottom: 30px;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.btn-whatsapp {
+  width: 100%;
+  padding: 15px;
+  font-size: 1.1rem;
+  margin-top: 10px;
+  background: linear-gradient(135deg, #25D366, #128C7E);
+  color: white;
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  font-weight: 600;
+  transition: var(--transition);
+}
+
+.btn-whatsapp:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 20px rgba(37, 211, 102, 0.4);
+}
+
+.map-section {
+  margin-top: 40px;
+}
+
+.map-container {
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.map-container iframe {
+  display: block;
+}
+
+@media (max-width: 992px) {
+  .contact-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 576px) {
+  .contact-form-wrapper {
+    padding: 25px;
+  }
+}

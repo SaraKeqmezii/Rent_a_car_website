@@ -1,0 +1,103 @@
+.car-card {
+  background: white;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+.car-image {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+
+.car-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: var(--transition);
+}
+
+.car-card:hover .car-image img {
+  transform: scale(1.1);
+}
+
+.badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.badge.available {
+  background: var(--success-color);
+  color: white;
+}
+
+.badge.unavailable {
+  background: var(--primary-color);
+  color: white;
+}
+
+.car-info {
+  padding: 20px;
+}
+
+.car-info h3 {
+  font-size: 1.3rem;
+  color: var(--secondary-color);
+  margin-bottom: 5px;
+}
+
+.car-year {
+  color: var(--text-light);
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+}
+
+.car-features {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.car-features span {
+  font-size: 0.85rem;
+  color: var(--text-light);
+  background: var(--light-color);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.car-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 15px;
+  border-top: 1px solid #eee;
+}
+
+.car-price {
+  display: flex;
+  align-items: baseline;
+  gap: 5px;
+}
+
+.car-price .price {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.car-price .per-day {
+  font-size: 0.9rem;
+  color: var(--text-light);
+}
+
+.car-footer .btn {
+  padding: 10px 20px;
+  font-size: 0.9rem;
+}

@@ -1,0 +1,203 @@
+.hero {
+  position: relative;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(135deg, #1d3557 0%, #457b9d 100%);
+  color: white;
+  overflow: hidden;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=1920') center/cover;
+  opacity: 0.2;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.hero .highlight {
+  color: var(--accent-color);
+}
+
+.hero p {
+  font-size: 1.3rem;
+  margin-bottom: 40px;
+  opacity: 0.9;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+.hero-buttons .btn-outline {
+  border-color: white;
+  color: white;
+}
+
+.hero-buttons .btn-outline:hover {
+  background: white;
+  color: var(--secondary-color);
+}
+
+.hero-stats {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+}
+
+.stat {
+  text-align: center;
+}
+
+.stat-number {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--accent-color);
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+/* Features */
+.feature-card {
+  background: white;
+  padding: 30px;
+  border-radius: var(--border-radius);
+  text-align: center;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--shadow-hover);
+}
+
+.feature-icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.feature-card h3 {
+  color: var(--secondary-color);
+  margin-bottom: 10px;
+}
+
+.feature-card p {
+  color: var(--text-light);
+}
+
+/* Featured Cars */
+.featured-cars {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.view-all {
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* How It Works */
+.step {
+  text-align: center;
+  padding: 30px;
+}
+
+.step-number {
+  width: 60px;
+  height: 60px;
+  background: var(--primary-color);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0 auto 20px;
+}
+
+.step h3 {
+  color: var(--secondary-color);
+  margin-bottom: 10px;
+}
+
+.step p {
+  color: var(--text-light);
+}
+
+/* CTA */
+.cta {
+  background: linear-gradient(135deg, var(--primary-color), #c0392b);
+  color: white;
+}
+
+.cta-content {
+  text-align: center;
+  padding: 40px;
+}
+
+.cta h2 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.cta p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  opacity: 0.9;
+}
+
+.cta .btn-primary {
+  background: white;
+  color: var(--primary-color);
+}
+
+.cta .btn-primary:hover {
+  box-shadow: 0 5px 20px rgba(255, 255, 255, 0.3);
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-stats {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .cta h2 {
+    font-size: 1.8rem;
+  }
+}
