@@ -46,6 +46,10 @@
   position: relative;
 }
 
+.navbar-menu a.btn {
+  color: white;
+}
+
 .navbar-menu a:not(.btn):hover {
   color: var(--primary-color);
 }
