@@ -42,8 +42,9 @@
   text-decoration: none;
   color: var(--text-color);
   font-weight: 500;
-  transition: var(--transition);
+  transition: all 0.3s ease;
   position: relative;
+  font-size: 1rem;
 }
 
 .navbar-menu a.btn {
@@ -52,6 +53,8 @@
 
 .navbar-menu a:not(.btn):hover {
   color: var(--primary-color);
+  transform: scale(1.15);
+  font-size: 1.1rem;
 }
 
 .navbar-menu a:not(.btn)::after {
