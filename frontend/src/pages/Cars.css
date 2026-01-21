@@ -3,7 +3,7 @@
 }
 
 .cars-hero {
-  background: linear-gradient(135deg, var(--secondary-color), #457b9d);
+  background: linear-gradient(135deg, #2c3e50, #34495e, #1a252f);
   color: white;
   padding: 80px 20px;
   text-align: center;
@@ -12,11 +12,13 @@
 .cars-hero h1 {
   font-size: 3rem;
   margin-bottom: 15px;
+  color: #e63946;
 }
 
 .cars-hero p {
   font-size: 1.2rem;
   opacity: 0.9;
+  color: #e63946;
 }
 
 .cars-content {
